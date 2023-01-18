@@ -51,31 +51,28 @@ button {
   margin: 0 auto;
   padding: 0 15px;
 }
-.padding_top_0 {
-  padding-top: 0;
-}
 header {
   padding: 25px 0;
   align-items: center;
   border-bottom: 1px solid #ececec;
 }
-.header_helper {
+.header__helper {
   display: flex;
   align-items: center;
 }
-.logo_WS {
+.logo-WS {
   font-family: 'Raleway';
   font-size: 26px;
   color: var(--letters_and_logo_color_black);
 }
-.logo_blue {
+.logo-blue {
   color: var(--link_and_button_color);
 }
-.header_nav {
+.header__nav {
   display: flex;
   align-items: center;
 }
-.header_link {
+.header__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -85,7 +82,7 @@ header {
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header_link:hover {
+.header__link:hover {
   color: var(--link_and_button_color);
 }
 .current {
@@ -102,17 +99,17 @@ header {
   background-color: var(--link_and_button_color);
   transition: color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header_contact {
+.header__contact {
   display: flex;
   align-items: center;
   gap: 50px;
   margin-left: auto;
 }
-.header_contact_icon {
+.header__contact-icon {
   vertical-align: middle;
   margin-right: 10px;
 }
-.header_kontact_link {
+.header__contact-link {
   color: #757575;
 }
 .header_list {
@@ -120,7 +117,7 @@ header {
   gap: 50px;
   margin-left: 93px;
 }
-.background_image_title {
+.title-section__bgd-image {
   text-align: center;
   align-items: center;
   padding: 200px 0;
@@ -133,7 +130,7 @@ header {
   max-width: 1600px;
   margin: 0 auto;
 }
-.title_section_h1 {
+.title-section__title {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
@@ -143,7 +140,7 @@ header {
   margin: 0 auto;
   margin-bottom: 30px;
 }
-.title_section_button {
+.btn {
   min-width: 200px;
   font-family: 'Roboto';
   font-weight: 700;
@@ -158,12 +155,12 @@ header {
   padding: 10px 41px;
   border: none;
 }
-.Our_Advantages {
+.Our_Advantages__ul {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
-.Our_Advantages_icons {
+.Our_Advantages__icons {
   background-color: #f5f4fa;
   height: 120px;
   display: flex;
@@ -172,7 +169,7 @@ header {
   align-items: center;
   border-radius: 4px;
 }
-.Our_Advantages_h2 {
+.Our-Advantages__title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -184,23 +181,26 @@ header {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.OA_list > h3 {
+.Our-Advantages__box-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
-.OA_list > p {
+.Our_Advantages__list > p {
   width: 270px;
   line-height: 1.71;
   color: #757575;
 }
-.what_we_do_list {
+.what-we-do {
+  padding-top: 0;
+}
+.what-we-do__ul {
   display: flex;
   gap: 30px;
 }
-.what_we_do_h2 {
+.what-we-do__title {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -208,10 +208,10 @@ header {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.WWD_list_box {
+.what-we-do__box {
   position: relative;
 }
-.WWD_list_p {
+.what-we-do__p {
   color: var(--letters_and_logo_color_white);
   font-weight: 700;
   font-size: 14px;
@@ -224,15 +224,15 @@ header {
   align-items: center;
   justify-content: center;
 }
-.our_team {
+.our-team {
   text-align: center;
   background-color: #f5f4fa;
 }
-.our_team_ul {
+.our-team__ul {
   display: flex;
   gap: 30px;
 }
-.our_team_h2 {
+.our-team__title {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -240,14 +240,26 @@ header {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.OT_list {
+.our-team__list {
   background: var(--letters_and_logo_color_white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.OT_list > div {
+.our-team__information {
   padding: 30px 0;
+}
+.our-team__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+.our-team__job-position {
+  font-size: 16px;
+  color: #757575;
+  letter-spacing: 0.03em;
 }
 /* ⬇ <<social media icons>> ⬇ */
 .social-media {
@@ -272,28 +284,16 @@ header {
   justify-content: center;
   margin-top: 16px;
 }
-.OT_list_h3 {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  margin-bottom: 10px;
+.social-media__footer_bg {
+  background-color: #ffffff1a;
 }
-.OT_list_p {
-  font-size: 16px;
-  color: #757575;
-  letter-spacing: 0.03em;
-}
-.fill_currentColor_svg > use {
-  fill: currentColor;
-}
-.aur_clients {
+.aur-clients__ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
-.aur_clients-a {
+.aur-clients__svg {
   color: #afb1b8;
   border: 1px solid currentColor;
   border-radius: 4px;
@@ -304,8 +304,8 @@ header {
   align-items: center;
   transition: color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
-.aur_clients-a:hover,
-.aur_clients-a:focus {
+.aur-clients__svg:hover,
+.aur-clients__svg:focus {
   color: var(--link_and_button_color);
   border-color: var(--link_and_button_color);
   outline: none;
@@ -316,23 +316,28 @@ footer {
   line-height: 24px;
   padding: 60px 0;
 }
-.logo_WS_white {
+.footer__contact {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+}
+.logo-WS-white {
   color: var(--letters_and_logo_color_white);
 }
-.map_address {
-  color: var(--letters_and_logo_color_white);
-}
-.contact_info {
+.contact__info {
   color: #999999;
 }
 address {
   font-style: normal;
   margin-top: 20px;
 }
-.address_items:not(:last-child) {
+.address__map {
+  color: var(--letters_and_logo_color_white);
+}
+.address__items:not(:last-child) {
   margin-bottom: 9px;
 }
-.contact_info:hover {
+.contact__info:hover {
   color: var(--link_and_button_color);
 }
 .footer_a_style {
@@ -342,33 +347,23 @@ address {
 address > a:hover {
   color: var(--link_and_button_color);
 }
-
-.footer_flex {
-  display: flex;
-  gap: 70px;
-  align-items: baseline;
-}
-.join_us_h3 {
+.join-us__title {
   color: var(--letters_and_logo_color_white);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
-.footer_bg {
-  background-color: #ffffff1a;
-}
-
-.newsletter_text {
+.newsletter__title {
   font-weight: 700;
   color: var(--letters_and_logo_color_white);
 }
-.newsletter_part {
+.newsletter__part {
   margin-top: 20px;
   display: flex;
   position: relative;
 }
-.newsletter_input {
+.newsletter__input {
   padding-left: 16px;
   width: 358px;
   height: 50px;
@@ -383,7 +378,7 @@ address > a:hover {
   outline: transparent;
 }
 
-.newsletter_btn {
+.newsletter-btn {
   text-align: left;
   padding: 10px 76px 10px 42px;
 }
@@ -396,16 +391,7 @@ address > a:hover {
   cursor: pointer;
 }
 /* ⬇ <<PORTFOLIO>> ⬇ */
-
-.title_button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 50px;
-}
-.title_button_h1 {
+.portfolio__title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -418,10 +404,19 @@ address > a:hover {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.TB_list {
+.portfolio-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+.portfolio-btn_list {
   display: inline-flex;
 }
-.TB_list > button {
+.portfolio-btn__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -435,49 +430,43 @@ address > a:hover {
   padding: 6px 25px;
   transition: color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
-.TB_list > button:hover,
-.TB_list > button:focus {
+
+.portfolio-btn__title:hover,
+.portfolio-btn__title:focus {
   background-color: var(--link_and_button_color);
   color: var(--letters_and_logo_color_white);
 }
-.portfolio_list {
+.portfolio-gallery {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.Port_list {
+.portfolio-collage {
   width: 370px;
 }
-.Port_list > img {
+.portfolio-collage__img {
   width: 100%;
   height: 294px;
 }
-.Port_list_TextDiv {
+.portfolio-collage__text-box {
   padding: 20px 0 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
 }
-.Port_list_overlay_hidden {
+.portfolio-collage__overlay-hidden {
   position: relative;
   overflow: hidden;
 }
-.Port_list_overlay {
+.portfolio-collage__overlay {
   position: absolute;
   top: 0;
-  background-color: var(--link_and_button_color);
+  background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 0.9;
 }
-
-.Port_list_shadow:hover .Port_list_overlay,
-.Port_list_shadow:focus .Port_list_overlay {
-  transform: translateY(0%);
-}
-
-.Port_list_overlay > p {
+.portfolio-collage__hidden-text {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -485,13 +474,13 @@ address > a:hover {
   padding: 49px 45px 49px 24px;
 }
 
-.Port_list_h3 {
+.portfolio-collage__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.Port_list_p {
+.portfolio-collage__subtitle {
   font-size: 16px;
   line-height: 1.88;
   color: #757575;
@@ -499,32 +488,24 @@ address > a:hover {
 }
 
 /* ⬇ <<Shadow in Portfolio>> ⬇ */
-.TB_list_shadow {
+.portfolio-shadow {
   display: block;
   color: inherit;
   transition: color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
-.TB_list_shadow:hover,
-.TB_list_shadow:focus {
+.portfolio-shadow:hover,
+.portfolio-shadow:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   outline: transparent;
   transition: color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
-.Port_list_shadow {
-  display: block;
-  color: inherit;
-  transition: color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+.portfolio-shadow:hover .portfolio-collage__overlay,
+.portfolio-shadow:focus .portfolio-collage__overlay {
+  transform: translateY(0%);
 }
-.Port_list_shadow:hover,
-.Port_list_shadow:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  outline: transparent;
-  transition: color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
-}
-.Port_list:hover .Port_list_overlay_hidden,
-.Port_list:focus .Port_list_overlay_hidden {
+.portfolio-collage:hover .portfolio-collage__overlay-hidden,
+.portfolio-collage:focus .portfolio-collage__overlay-hidden {
   transform: translateY(0%);
 }
 
@@ -573,11 +554,11 @@ address > a:hover {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.order_servise_form {
+.order-form {
   display: flex;
   flex-direction: column;
 }
-.order_servise_form > p {
+.order-form__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -585,7 +566,7 @@ address > a:hover {
   color: var(--letters_and_logo_color_black);
   margin-bottom: 2px;
 }
-.form_label {
+.order-form__label {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -596,11 +577,11 @@ address > a:hover {
   margin-top: 10px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form_label:hover,
-.form_label:focus {
+.order-form__label:hover,
+.order-form__label:focus {
   fill: var(--link_and_button_color);
 }
-.form_input {
+.order-form_input {
   padding: 8px;
   font-family: inherit;
   margin-top: 4px;
@@ -612,22 +593,22 @@ address > a:hover {
   outline: transparent;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form_input:focus,
-.form_input:hover {
+.order-form_input:focus,
+.order-form_input:hover {
   border-color: var(--link_and_button_color);
   outline: transparent;
 }
-.form_svg {
+.order-form__svg {
   position: absolute;
   top: 50%;
   left: 16px;
 }
-.form_svg:focus,
-.form_svg:hover {
+.order-form__svg:focus,
+.order-form__svg:hover {
   color: var(--link_and_button_color);
 }
 
-.form_textarea {
+.order-form__textarea {
   height: 120px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -640,8 +621,8 @@ address > a:hover {
   padding: 12px 16px;
 }
 
-.form_textarea:focus,
-.form_textarea:hover {
+.order-form__textarea:focus,
+.order-form__textarea:hover {
   border-color: var(--link_and_button_color);
 }
 .recaptcha {
@@ -649,7 +630,7 @@ address > a:hover {
   position: relative;
 }
 
-.submit_button {
+.order-form__button {
   margin-top: 30px;
   padding: 10px 76px;
 }
